@@ -1,0 +1,2 @@
+rootProject.name = "fridge_manger2"
+include ':app'
