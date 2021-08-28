@@ -6,8 +6,23 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
+<!--feature content-->
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="feature1">互動式管理食材</string>
+    <string name="feature2">自行設計冰箱介面</string>
+    <string name="feature3">一人多箱</string>
+    <string name="feature4">與家人共享冰箱</string>
+
+    <string name="descript1">像遊戲的方式，藉由拖移食材icon新增、移動或刪除食物</string>
+    <string name="descript2">內建常見的冰箱格局，也可以自行調整以符合自家冰箱格局</string>
+    <string name="descript3">你可以同時管理多台冰箱，將自家、需要照顧的阿公家、宿舍的冰箱都打點清楚!</string>
+    <string name="descript4">家人可以一起管理同一台冰箱，隨時掌握食材最新狀況</string>
+
+    <!--button-->
+
+    <string name="start">開始使用</string>
+
+
 </resources>
