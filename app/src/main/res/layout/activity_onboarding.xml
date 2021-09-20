@@ -28,23 +28,23 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/skip_button"
-            android:layout_width="180dp"
-            android:layout_height="60dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
+            android:onClick="skip"
             android:text="@string/start"
             android:textSize="18dp"
-            android:onClick="skip"
-            app:backgroundTint="@color/purple_200" />
+            app:backgroundTint="@color/blue_100" />
 
         <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
             android:id="@+id/spring_dots_indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:dampingRatio="0.5"
-            app:dotsColor="@color/purple_700"
+            app:dotsColor="@color/blue_100_dark"
 
-            app:dotsStrokeColor="@color/purple_500"
+            app:dotsStrokeColor="@color/blue_100_dark"
             app:dotsCornerRadius="20dp"
             app:dotsSize="12dp"
             app:dotsSpacing="6dp"
