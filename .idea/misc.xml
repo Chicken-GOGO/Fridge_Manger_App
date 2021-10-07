@@ -3,6 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable-v21/ic_menu_camera.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable-v21/ic_menu_gallery.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable/ic_filter.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable/ic_filter_category.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable/ic_filter_date.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable/ic_filter_edit.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/drawable/side_nav_bar.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/font/notosanstc.xml" value="0.3963541666666667" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/layout/app_bar_main.xml" value="0.2046875" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/layout/content_main.xml" value="0.2" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/layout/filter_dialog.xml" value="0.4" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/layout/slides_layout.xml" value="0.2046875" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/menu/activity_main_drawer.xml" value="0.6" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/menu/app_bar_menu.xml" value="0.4" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/menu/main.xml" value="0.4" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22083333333333333" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/activity_main.xml" value="0.1296875" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/activity_onboarding.xml" value="0.264" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/content_main.xml" value="0.25364583333333335" />
