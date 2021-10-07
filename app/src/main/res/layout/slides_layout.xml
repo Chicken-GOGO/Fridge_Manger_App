@@ -19,7 +19,7 @@
         android:id="@+id/feature"
         android:layout_width="200dp"
         android:layout_height="0sp"
-        android:layout_marginTop="10dp"
+
         android:gravity="center"
         android:text="@string/feature1"
 
@@ -32,7 +32,7 @@
         android:id="@+id/descript"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="17sp"
+
         android:gravity="center"
         android:text="@string/descript1"
         android:textSize="15sp"
