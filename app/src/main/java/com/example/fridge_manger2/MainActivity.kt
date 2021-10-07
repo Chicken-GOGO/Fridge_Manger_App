@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     //this function trigger alert dialog for appbar icons
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         //trigger filter dialog by clicking filter icon on app bar
-        val filterDialog = AlertDialog.Builder(this)
+        val filterDialog = AlertDialog.Builder(this,R.style.AlertDialogTheme)
             .setPositiveButton("確定") { _, _ -> Toast.makeText(this, "篩選成功", Toast.LENGTH_SHORT).show() }
             .setNegativeButton("取消") { _, _ -> Toast.makeText(this, "已取消篩選", Toast.LENGTH_SHORT).show() }
             .setView(R.layout.filter_dialog)

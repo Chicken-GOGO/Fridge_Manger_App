@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="deep_orange_100">#ffccbc</color>
-    <color name="deep_orange_100_light">#ffffee</color>
-    <color name="deep_orange_100_dark">#cb9b8c</color>
-    <color name="blue_100">#baddf9</color>
-    <color name="blue_100_light">#edffff</color>
-    <color name="blue_100_dark">#89abc6</color>
+<!-- color level has changed to 200 in the color tool-->
+    <color name="deep_orange_100">#ffab91</color>
+    <color name="deep_orange_100_light">#ffddc1</color>
+    <color name="deep_orange_100_dark">#c97b63</color>
+    <color name="blue_100">#90caf9</color>
+    <color name="blue_100_light">#c3fdff</color>
+    <color name="blue_100_dark">#5d99c6</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 <!--color for filter date chip-->
+    <color name="deep_orange_400">#ff7043</color>
     <color name="red">#E57373</color>
     <color name="yellow">#FFCA28</color>
     <color name="green">#9CCC65</color>
+    <color name="gray">#616161</color>
 </resources>
