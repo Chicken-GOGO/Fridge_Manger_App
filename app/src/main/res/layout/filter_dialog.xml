@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <!-- title-->
+    <TextView
+        android:id="@+id/text_filter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/text_filter_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/text_filter_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--input chip for name -->
+
+    <ImageView
+        android:id="@+id/icon_for_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/text_filter_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_filter_name"
+        app:srcCompat="@drawable/ic_filter_edit"
+        tools:ignore="VectorDrawableCompat" />
+
+    <!--filter chip for date -->
+
+    <TextView
+        android:id="@+id/text_filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/filter_food_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chip_group_name"
+        app:layout_constraintStart_toEndOf="@+id/icon_for_name"
+        app:layout_constraintTop_toBottomOf="@id/text_filter_title" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_filter_date"
+        app:layout_constraintStart_toStartOf="@+id/text_filter_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_filter_name">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_input"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name1" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <ImageView
+        android:id="@+id/icon_for_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/text_filter_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_filter_date"
+        app:srcCompat="@drawable/ic_filter_date"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/text_filter_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/text_filter_date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chip_group_date"
+        app:layout_constraintStart_toEndOf="@+id/icon_for_date"
+        app:layout_constraintTop_toBottomOf="@+id/chip_group_name"
+        app:layout_constraintVertical_bias="0.981"
+        android:layout_marginLeft="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_filter_category"
+        app:layout_constraintStart_toStartOf="@+id/text_filter_date"
+        app:layout_constraintTop_toBottomOf="@+id/text_filter_category">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_date_red"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_for_red_chip"
+            android:textColor="#212121"
+            app:chipBackgroundColor="@color/red" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_date_yellow"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_for_yellow_chip"
+            app:chipBackgroundColor="@color/yellow" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_date_green"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_for_green_chip"
+            app:chipBackgroundColor="@color/green" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!--filter chip for category -->
+
+    <ImageView
+        android:id="@+id/icon_for_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/text_filter_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_filter_category"
+        app:srcCompat="@drawable/ic_filter_category"
+        android:layout_marginLeft="16dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/text_filter_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/text_filter_category"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chip_group_category"
+        app:layout_constraintStart_toEndOf="@+id/icon_for_category"
+        app:layout_constraintTop_toBottomOf="@+id/chip_group_date"
+        android:layout_marginLeft="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/text_filter_category"
+        app:layout_constraintTop_toBottomOf="@+id/text_filter_category">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_category1"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category1" />
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

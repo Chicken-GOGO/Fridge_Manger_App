@@ -21,8 +21,18 @@
     <string name="descript4">家人可以一起管理同一台冰箱，隨時掌握食材最新狀況</string>
 
     <!--button-->
-
     <string name="start">開始使用</string>
 
+<!-- filter content -->
+    <string name="filter_food_name">食物名稱</string>
+    <string name="text_filter_date">到期燈號</string>
+    <string name="text_filter_category">食物種類</string>
+    <string name="text_for_red_chip">兩天內到期</string>
+    <string name="text_for_yellow_chip">一周內到期</string>
+    <string name="text_for_green_chip">保存期限超過一周</string>
+    <string name="name1">name1</string>
+    <string name="category1">category1</string>
+    <string name="text_filter_title" >篩選</string>
+    <string name="menu_item_filter">Filter</string>
 
 </resources>
