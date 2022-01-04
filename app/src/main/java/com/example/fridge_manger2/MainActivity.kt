@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fridge_manger2.databinding.ActivityMainBinding
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     lateinit var onboardingscreen :SharedPreferences//lateinit:確定變數會被初始化 只能被用在會改變的屬性上
@@ -16,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 //        binding = ActivityMainBinding.inflate(layoutInflater)
 //        setContentView(binding.root)
+
+        //connect to firebase
+        val db = Firebase.firestore
 
         //讓Onboarding只顯示一次
         onboardingscreen=getSharedPreferences("onboardingscreen", MODE_PRIVATE)
