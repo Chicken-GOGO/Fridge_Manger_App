@@ -24,12 +24,20 @@
         <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/menu/main.xml" value="0.4" />
         <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/MLJ/AndroidStudioProjects/fridge_manger2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22083333333333333" />
-        <entry key="..\:/fridge_manger2/app/src/main/res/layout/activity_main.xml" value="0.1296875" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/drawable/ic_filter_edit.xml" value="0.26979166666666665" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/drawable/ic_food_amount.xml" value="0.26979166666666665" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/drawable/ic_food_note.xml" value="0.26979166666666665" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/layout/activity_add_food.xml" value="0.2390625" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/activity_onboarding.xml" value="0.264" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/content_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/layout/filter_dialog.xml" value="0.25364583333333335" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/layout/food_detail_dialog.xml" value="0.25364583333333335" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/fragment_gallery.xml" value="0.21770833333333334" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/fragment_home.xml" value="0.25364583333333335" />
         <entry key="..\:/fridge_manger2/app/src/main/res/layout/slides_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/layout/test.xml" value="0.25364583333333335" />
+        <entry key="..\:/fridge_manger2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23958333333333334" />
       </map>
     </option>
   </component>

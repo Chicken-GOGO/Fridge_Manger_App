@@ -4,23 +4,20 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.fridge_manger2.databinding.ActivityMainBinding
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
-    lateinit var onboardingscreen :SharedPreferences//lateinit:確定變數會被初始化 只能被用在會改變的屬性上
+    private lateinit var onboardingscreen :SharedPreferences//lateinit:確定變數會被初始化 只能被用在會改變的屬性上
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        binding = ActivityMainBinding.inflate(layoutInflater)
 //        setContentView(binding.root)
 
-        //connect to firebase
-        val db = Firebase.firestore
+
 
         //讓Onboarding只顯示一次
         onboardingscreen=getSharedPreferences("onboardingscreen", MODE_PRIVATE)
@@ -31,11 +28,15 @@ class MainActivity : AppCompatActivity() {
             editor.putBoolean("firsttime",false)
             editor.commit()
 
-            var intent:Intent= Intent(this,Onboarding::class.java)
+            var intent= Intent(this,Onboarding::class.java)
             startActivity(intent)
             finish()
         }
+        var intent= Intent(this,AddFood::class.java)
+        startActivity(intent)
+
     }
+
     //make customize app bar
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.app_bar_menu, menu)
