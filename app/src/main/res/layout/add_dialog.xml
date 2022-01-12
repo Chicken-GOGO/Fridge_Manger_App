@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/cooking_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="cooking"
+        app:layout_constraintStart_toStartOf="@id/cooking"
+        app:layout_constraintTop_toBottomOf="@id/cooking" />
+
+    <ImageView
+        android:id="@+id/cooking"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="502dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cooking" />
+
+    <ImageView
+        android:id="@+id/dairy"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dairy" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="dairy"
+        app:layout_constraintStart_toStartOf="@id/dairy"
+        app:layout_constraintTop_toBottomOf="@id/dairy" />
+
+    <ImageView
+        android:id="@+id/delicatessen"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/delicatessen" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="delicatessen"
+        app:layout_constraintStart_toStartOf="@id/delicatessen"
+        app:layout_constraintTop_toBottomOf="@id/delicatessen" />
+
+    <ImageView
+        android:id="@+id/dessert"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="384dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dessert" />
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="dessert"
+        app:layout_constraintStart_toStartOf="@id/dessert"
+        app:layout_constraintTop_toBottomOf="@id/dessert" />
+
+    <ImageView
+        android:id="@+id/drink"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="384dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/drink" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="drink"
+        app:layout_constraintStart_toStartOf="@id/drink"
+        app:layout_constraintTop_toBottomOf="@id/drink" />
+
+    <ImageView
+        android:id="@+id/fruit"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fruit" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="fruit"
+        app:layout_constraintStart_toStartOf="@id/fruit"
+        app:layout_constraintTop_toBottomOf="@id/fruit" />
+
+    <ImageView
+        android:id="@+id/grains"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="268dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grains" />
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="grains"
+        app:layout_constraintStart_toStartOf="@id/grains"
+        app:layout_constraintTop_toBottomOf="@id/grains" />
+
+    <ImageView
+        android:id="@+id/meat"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="268dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/meat" />
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="meat"
+        app:layout_constraintStart_toStartOf="@id/meat"
+        app:layout_constraintTop_toBottomOf="@id/meat" />
+
+    <ImageView
+        android:id="@+id/protein"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="268dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/protein" />
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="protein"
+        app:layout_constraintStart_toStartOf="@id/protein"
+        app:layout_constraintTop_toBottomOf="@id/protein" />
+
+    <ImageView
+        android:id="@+id/vegetable"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vegetable" />
+
+    <TextView
+        android:id="@+id/text10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="vegetable"
+        app:layout_constraintStart_toStartOf="@id/vegetable"
+        app:layout_constraintTop_toBottomOf="@id/vegetable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
