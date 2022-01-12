@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <!-- Set it to Light, to get the black title and with the action bar-->
-    <style name="Theme.Fridge_manger2" parent="Theme.MaterialComponents.Light">
+    <style name="Theme.Fridge_manger2" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/deep_orange_100</item>
         <item name="colorPrimaryVariant">@color/deep_orange_100_dark</item>
@@ -16,10 +16,6 @@
         <item name="fontFamily">@font/notosanstc</item>
     </style>
 
-    <style name="Theme.Fridge_manger2.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
 
     <style name="Theme.Fridge_manger2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

@@ -19,8 +19,8 @@ class Slider_Adapter: PagerAdapter{
     }
 
     //content
-    private val images:ArrayList<Int> = arrayListOf(R.drawable.add_missing_place,R.drawable.make_a_call,
-        R.drawable.search_place,R.drawable.sit_back_and_relax)
+    private val images:ArrayList<Int> = arrayListOf(R.drawable.interactive_manage_fridge,R.drawable.design_fridge,
+        R.drawable.many_fridge,R.drawable.family_shared)
     private val features:ArrayList<Int> = arrayListOf(R.string.feature1,R.string.feature2,R.string.feature3,R.string.feature4)
     private val descriptions:ArrayList<Int> = arrayListOf(R.string.descript1,R.string.descript2,R.string.descript3,R.string.descript4)
 

@@ -6,11 +6,29 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-<!--feature content-->
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+
+    <!--setting-->
+    //設定
+    <string name="menu_item_setting">設定</string>
+    <string name="fridge_setting">設定冰箱層板</string>
+    <string name="show_food_name">顯示食物名稱</string>
+    <string name="change_fridge">切換冰箱介面</string>>
+    //LINE 帳號
+    <string name="line_dialog_setting">綁定LINE帳號</string>
+    <string name="line_dialog_title">LINE帳號</string>
+    <string name="input_line_account"> 輸入LINE帳號 </string>
+    <!--app bar buttom-->
+    <string name="menu_home">首頁</string>
+    <string name="menu_settings">設定</string>
+    <string name="menu_filter">篩選</string>
     <string name="feature1">互動式管理食材</string>
+
+    //新增、刪除、選擇冰箱
+    <string name="fridge_dialog_title1">新增共享冰箱</string>
+    <string name="fridge_dialog_title2">取消共享冰箱</string>
+    <string name="input_fridge_name">輸入將共享的冰箱 ID </string>
+
+    <!--feature content-->
     <string name="feature2">自行設計冰箱介面</string>
     <string name="feature3">一人多箱</string>
     <string name="feature4">與家人共享冰箱</string>
@@ -34,5 +52,6 @@
     <string name="category1">category1</string>
     <string name="text_filter_title" >篩選</string>
     <string name="menu_item_filter">Filter</string>
+    <string name="text_setting_title">冰箱設定</string>
 
 </resources>
