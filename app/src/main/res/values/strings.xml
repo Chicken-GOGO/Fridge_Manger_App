@@ -53,5 +53,6 @@
     <string name="text_filter_title" >篩選</string>
     <string name="menu_item_filter">Filter</string>
     <string name="text_setting_title">冰箱設定</string>
+    <string name="setting_bar_name">冰箱設定</string>
 
 </resources>

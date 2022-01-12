@@ -9,6 +9,22 @@
     app:titleTextColor="?attr/colorOnPrimary">
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="294dp"
+            android:layout_height="510dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/frame" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppbar"
         android:layout_width="match_parent"
@@ -27,8 +43,6 @@
             android:layout_gravity="bottom"
             android:background="@drawable/background_transparent"
             app:menu = "@menu/app_bar_bottom"/>
-
-
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -38,7 +52,6 @@
         app:srcCompat="@drawable/ic_add"
         app:layout_anchor="@id/bottomAppbar"
         tools:ignore="SpeakableTextPresentCheck" />
-
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

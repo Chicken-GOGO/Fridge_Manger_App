@@ -20,7 +20,8 @@
         <activity
             android:name=".SettingActivity"
             android:exported="false"
-            android:theme="@style/Theme.Fridge_manger2"
+            android:theme="@style/Theme.Setting.appbar"
+            android:label="@string/setting_bar_name"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
