@@ -13,26 +13,29 @@
 
     <ImageView
         android:id="@+id/imageView"
-        app:srcCompat="@drawable/ic_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/fridge_dialog_textview1"
         app:layout_constraintEnd_toStartOf="@+id/fridge_dialog_textview1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fridge_dialog_textview1"
-        app:layout_constraintVertical_bias="1.0"
-         />
+        app:layout_constraintVertical_bias="0.488"
+        app:srcCompat="@drawable/ic_add"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/fridge_dialog_textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="109dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="@string/fridge_dialog_title1"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -42,17 +45,20 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/fridge_dialog_textview2"
         app:layout_constraintEnd_toStartOf="@+id/fridge_dialog_textview2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fridge_dialog_textview2"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_edit" />
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/ic_edit"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/fridge_dialog_textview2"
@@ -60,7 +66,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="@string/fridge_dialog_title2"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -70,17 +77,20 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/line_dialog_textview"
         app:layout_constraintEnd_toStartOf="@+id/line_dialog_textview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/line_dialog_textview"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_account" />
+        app:layout_constraintVertical_bias="0.577"
+        app:srcCompat="@drawable/ic_account"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/line_dialog_textview"
@@ -88,7 +98,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="@string/line_dialog_setting"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -98,26 +109,31 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/fridge_setting_textview"
         app:layout_constraintEnd_toStartOf="@+id/fridge_setting_textview"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.689"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fridge_setting_textview"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_settings_overscan" />
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/ic_settings_overscan"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/fridge_setting_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="@string/fridge_setting"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -127,16 +143,19 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/fridge_change_textview"
         app:layout_constraintEnd_toStartOf="@+id/fridge_change_textview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fridge_change_textview"
-        app:srcCompat="@drawable/ic_settings_overscan" />
+        app:srcCompat="@drawable/ic_change"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/fridge_change_textview"
@@ -144,7 +163,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="@string/change_fridge"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -154,13 +174,13 @@
         app:layout_constraintTop_toBottomOf="@+id/fridge_setting_textview" />
 
     <!--    <ListView-->
-<!--        android:id="@+id/settingList"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" >-->
+    <!--        android:id="@+id/settingList"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" >-->
 
-<!--    </ListView>-->
+    <!--    </ListView>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

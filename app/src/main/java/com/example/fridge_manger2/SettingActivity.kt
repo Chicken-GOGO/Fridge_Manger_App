@@ -43,7 +43,7 @@ class SettingActivity : AppCompatActivity() {
         val add_button = findViewById<TextView>(R.id.fridge_dialog_textview1)
         add_button.setOnClickListener {
 
-            val addFridgeDialog = AlertDialog.Builder(this)
+            val addFridgeDialog = AlertDialog.Builder(this,R.style.AlertDialogTheme)
             val dialogLayout = layoutInflater.inflate(R.layout.dialog_add_fridge, null)
             var editText_id = dialogLayout.findViewById<EditText>(R.id.editText_id)
             var editText_name = dialogLayout.findViewById<EditText>(R.id.editText_name)
@@ -94,7 +94,7 @@ class SettingActivity : AppCompatActivity() {
                         Log.d(ContentValues.TAG, "DocumentSnapshot data: ${fridges}")
 
                         //set dialog
-                        val fridgeNameDialog = AlertDialog.Builder(this)
+                        val fridgeNameDialog = AlertDialog.Builder(this,R.style.AlertDialogTheme)
                         val selected_index = ArrayList<Int>()
 
 
@@ -121,7 +121,6 @@ class SettingActivity : AppCompatActivity() {
                                 //delete fridge form (users/$user_id/fridges-key)
                                 val delete_fridges = hashMapOf<String, Any>()
                                 var fridges_ids = fridges.keys.map { it.toString() }.toTypedArray()
-                                val selected_index = arrayOf(0, 1, 2)
                                 val selected_ids = fridges_ids.filterIndexed { index, _ -> index in selected_index }
                                 for (id in selected_ids) {
                                     delete_fridges.put("fridges.$id", FieldValue.delete())
@@ -172,7 +171,7 @@ class SettingActivity : AppCompatActivity() {
     private fun show_line_dialog() {
         val add_button = findViewById<TextView>(R.id.line_dialog_textview)
         add_button.setOnClickListener {
-            val lineDialog = AlertDialog.Builder(this)
+            val lineDialog = AlertDialog.Builder(this,R.style.AlertDialogTheme)
             val dialogLayout = layoutInflater.inflate(R.layout.dialog_line, null)
 
             lineDialog
@@ -204,38 +203,38 @@ class SettingActivity : AppCompatActivity() {
             var fridges_ids: Array<String>
 
             val docRef = db.collection("users").document(user_id)
-                        docRef.get()
-                            .addOnSuccessListener { document ->
-                                if (document != null) {
-                                    fridges = document.data?.get("fridges") as Map<*, *>
-                                    fridges_names = (fridges as Map<*, *>).values.map { it.toString() }.toTypedArray()
-                                    fridges_ids = (fridges as Map<*, *>).keys.map { it.toString() }.toTypedArray()
-                                    Log.d(ContentValues.TAG, "DocumentSnapshot data: ${fridges}")
+            docRef.get()
+                .addOnSuccessListener { document ->
+                    if (document != null) {
+                        fridges = document.data?.get("fridges") as Map<*, *>
+                        fridges_names = (fridges as Map<*, *>).values.map { it.toString() }.toTypedArray()
+                        fridges_ids = (fridges as Map<*, *>).keys.map { it.toString() }.toTypedArray()
+                        Log.d(ContentValues.TAG, "DocumentSnapshot data: ${fridges}")
 
-                                //set dialog
-                                    val singleChoiceDialog = AlertDialog.Builder(this)
-                                        .setTitle("選取要切換的冰箱")
-                                        .setSingleChoiceItems(fridges_names, 0) { _, i ->
-                                            Toast.makeText(this, "你選擇了 ${fridges_names[i]} 冰箱", Toast.LENGTH_SHORT).show()
-                                            Log.d(ContentValues.TAG, "choose fridge ID: ${fridges_ids[i]}")
-                                        }
-                                        .setPositiveButton("確定") { _, i ->
-                                            Toast.makeText(this, "切換冰箱成功", Toast.LENGTH_SHORT).show()
-//
-                                        }
-                                        .setNegativeButton("取消") { _, _ ->
-                                            Toast.makeText(this, "取消切換冰箱", Toast.LENGTH_SHORT).show()
-                                        }
-                                        .create()
-                                        .show()
-                                }
-                                else {
-                                    Log.d(ContentValues.TAG, "No such document")
-                                }
+                        //set dialog
+                        val singleChoiceDialog = AlertDialog.Builder(this,R.style.AlertDialogTheme)
+                            .setTitle("選取要切換的冰箱")
+                            .setSingleChoiceItems(fridges_names, 0) { _, i ->
+                                Toast.makeText(this, "你選擇了 ${fridges_names[i]} 冰箱", Toast.LENGTH_SHORT).show()
+                                Log.d(ContentValues.TAG, "choose fridge ID: ${fridges_ids[i]}")
                             }
-                        .addOnFailureListener { exception ->
-                            Log.d(ContentValues.TAG, "get failed with ", exception)
-                        }
+                            .setPositiveButton("確定") { _, i ->
+                                Toast.makeText(this, "切換冰箱成功", Toast.LENGTH_SHORT).show()
+//
+                            }
+                            .setNegativeButton("取消") { _, _ ->
+                                Toast.makeText(this, "取消切換冰箱", Toast.LENGTH_SHORT).show()
+                            }
+                            .create()
+                            .show()
+                    }
+                    else {
+                        Log.d(ContentValues.TAG, "No such document")
+                    }
+                }
+                .addOnFailureListener { exception ->
+                    Log.d(ContentValues.TAG, "get failed with ", exception)
+                }
         }
     }
 }
