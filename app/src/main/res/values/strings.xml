@@ -41,7 +41,7 @@
     <!--button-->
     <string name="start">開始使用</string>
 
-<!-- filter content -->
+    <!-- filter content -->
     <string name="filter_food_name">食物名稱</string>
     <string name="text_filter_date">到期燈號</string>
     <string name="text_filter_category">食物種類</string>
@@ -50,7 +50,7 @@
     <string name="text_for_green_chip">保存期限超過一周</string>
     <string name="name1">name1</string>
     <string name="category1">category1</string>
-    <string name="text_filter_title" >篩選</string>
+    <string name="text_filter_title">篩選</string>
     <string name="menu_item_filter">Filter</string>
     <string name="text_setting_title">冰箱設定</string>
     <string name="setting_bar_name">冰箱設定</string>

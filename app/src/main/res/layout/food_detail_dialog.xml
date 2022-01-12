@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="食物資料"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/name_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:srcCompat="@drawable/ic_filter_edit"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="食物名稱"
+        android:textSize="18sp"
+        android:singleLine="true"
+        app:layout_constraintStart_toEndOf="@+id/name_icon"
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/name"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/name"/>
+
+    <!--amount section-->
+
+    <ImageView
+        android:id="@+id/amount_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/amount"
+        app:layout_constraintBottom_toBottomOf="@id/amount"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/ic_food_amount"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="數量"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toEndOf="@+id/expired_icon" />
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="@id/amount"
+        app:layout_constraintBottom_toBottomOf="@id/amount"
+        app:layout_constraintStart_toStartOf="@id/nameinput"/>
+
+    <!--    expired section-->
+    <ImageView
+        android:id="@+id/expired_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/expired"
+        app:layout_constraintBottom_toBottomOf="@id/expired"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/ic_filter_date"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/expired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="有效期限"
+
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/amount_input"
+        app:layout_constraintStart_toEndOf="@+id/expired_icon" />
+
+    <Button
+        android:id="@+id/expired_date"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Fri, 31 Dec 2021"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/amount_input"
+        app:layout_constraintTop_toTopOf="@id/expired"
+        app:layout_constraintBottom_toBottomOf="@id/expired"/>
+
+    <!--    category section-->
+
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/category"
+        app:layout_constraintBottom_toBottomOf="@id/category"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/ic_filter_category"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="食物種類"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/category_icon"
+        app:layout_constraintTop_toBottomOf="@id/expired" />
+    <LinearLayout
+        android:id="@+id/category_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/category"
+        app:layout_constraintBottom_toBottomOf="@id/category"
+        app:layout_constraintStart_toStartOf="@+id/expired_date">
+
+        <TextView
+            android:id="@+id/category_big"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="大分類"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+
+            />
+        <TextView
+            android:id="@+id/category_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="小分類"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <!--    note section-->
+    <ImageView
+        android:id="@+id/note_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/note"
+        app:layout_constraintBottom_toBottomOf="@id/note"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/ic_food_note"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="備註"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/category"
+        app:layout_constraintStart_toEndOf="@+id/note_icon" />
+    <EditText
+        android:id="@+id/noteinput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/note"
+        app:layout_constraintTop_toBottomOf="@id/note"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
