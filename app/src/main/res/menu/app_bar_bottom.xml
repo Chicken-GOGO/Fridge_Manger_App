@@ -7,26 +7,32 @@
         android:icon = "@drawable/ic_home"
         app:showAsAction="ifRoom"/>
 
-    <item
-        android:id="@+id/placeholder"
-        android:title = ""
-        app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/placeholder2"
-        android:title = ""
-        app:showAsAction="ifRoom"/>
-
     <item android:id = "@+id/setting"
         android:title = "@string/menu_settings"
         android:icon = "@drawable/ic_settings"
         app:showAsAction="ifRoom"/>
 
+    <item
+        android:id="@+id/placeholder"
+        android:title = ""
+        app:showAsAction="ifRoom"/>
 
     <item android:id = "@+id/filter"
         android:title = "@string/menu_filter"
         android:icon = "@drawable/ic_filter"
         app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/placeholder2"
+        android:title = ""
+
+        app:showAsAction="ifRoom"/>
+
+
+
+
+
 
 
 </menu>

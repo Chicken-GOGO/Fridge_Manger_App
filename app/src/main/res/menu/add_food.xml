@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cooking"
+        android:title="料理相關類">
+        <menu>
+            <item android:id="@+id/butter"
+                android:title="奶油" />
+            <item android:id="@+id/chili"
+                android:title="辣椒" />
+            <item android:id="@+id/jam"
+                android:title="果醬" />
+            <item android:id="@+id/kimchi"
+                android:title="泡菜" />
+            <item android:id="@+id/olive_oil"
+                android:title="油" />
+            <item android:id="@+id/soy_sauce"
+                android:title="醬油" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/dairy"
+        android:title="乳及乳製品">
+        <menu>
+            <item android:id="@+id/cheese"
+                android:title="起司" />
+            <item android:id="@+id/milk"
+                android:title="牛奶" />
+            <item android:id="@+id/yogurt"
+                android:title="優格" />
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/delicatessen"
+        android:title="熟食類">
+        <menu>
+            <item android:id="@+id/baozi"
+                android:title="包子" />
+            <item android:id="@+id/dish"
+                android:title="料理" />
+            <item android:id="@+id/dumpling"
+                android:title="水餃" />
+            <item android:id="@+id/lunch_box"
+                android:title="便當" />
+            <item android:id="@+id/noodles"
+                android:title="麵" />
+            <item android:id="@+id/raw_dumpling"
+                android:title="冷凍水餃" />
+            <item android:id="@+id/rice_ball"
+                android:title="飯糰" />
+            <item android:id="@+id/soup"
+                android:title="湯" />
+
+        </menu>
+
+
+    </item>
+
+
+    <item
+        android:id="@+id/dessert"
+        android:title="甜品">
+
+        <menu>
+            <item android:id="@+id/apple_pie"
+                android:title="蘋果派" />
+            <item android:id="@+id/birthday_cake"
+                android:title="生日蛋糕" />
+            <item android:id="@+id/biscuit"
+                android:title="餅乾" />
+            <item android:id="@+id/cake"
+                android:title="蛋糕" />
+            <item android:id="@+id/candy"
+                android:title="糖果" />
+            <item android:id="@+id/chocolate_bar"
+                android:title="巧克力" />
+            <item android:id="@+id/dount"
+                android:title="甜甜圈" />
+            <item android:id="@+id/ice_bar"
+                android:title="冰棒" />
+            <item android:id="@+id/ice_cream"
+                android:title="冰淇淋" />
+            <item android:id="@+id/panna_cotta"
+                android:title="奶酪" />
+            <item android:id="@+id/pudding"
+                android:title="布丁" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/drink"
+        android:title="飲料類" >
+        <menu>
+            <item android:id="@+id/beer"
+                android:title="啤酒" />
+            <item android:id="@+id/bottle_drink"
+                android:title="瓶裝飲料" />
+            <item android:id="@+id/canned_drink"
+                android:title="罐裝飲料" />
+            <item android:id="@+id/hand_shake"
+                android:title="手搖飲" />
+            <item android:id="@+id/juice"
+                android:title="果汁" />
+            <item android:id="@+id/soy_milk"
+                android:title="豆漿" />
+            <item android:id="@+id/water"
+                android:title="水" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/fruit"
+        android:title="水果">
+
+        <menu>
+            <item android:id="@+id/apple"
+                android:title="蘋果" />
+            <item android:id="@+id/banana"
+                android:title="香蕉" />
+            <item android:id="@+id/cherry"
+                android:title="櫻桃" />
+            <item android:id="@+id/lemon"
+                android:title="檸檬" />
+            <item android:id="@+id/mango"
+                android:title="芒果" />
+            <item android:id="@+id/orange"
+                android:title="橘子" />
+            <item android:id="@+id/peach"
+                android:title="桃子" />
+            <item android:id="@+id/pear"
+                android:title="梨" />
+            <item android:id="@+id/pineapple"
+                android:title="鳳梨" />
+            <item android:id="@+id/strawberry"
+                android:title="草莓" />
+            <item android:id="@+id/watermelon"
+                android:title="西瓜" />
+            <item android:id="@+id/grape"
+                android:title="葡萄" />
+            <item android:id="@+id/guava"
+                android:title="芭樂" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/grains"
+        android:title="五穀根莖類">
+        <menu>
+            <item android:id="@+id/bread"
+                android:title="麵包" />
+            <item android:id="@+id/corn"
+                android:title="玉米" />
+            <item android:id="@+id/croissant"
+                android:title="可頌" />
+            <item android:id="@+id/raw_rice"
+                android:title="米" />
+            <item android:id="@+id/rice"
+                android:title="飯" />
+            <item android:id="@+id/sweet_potato"
+                android:title="地瓜" />
+            <item android:id="@+id/toast"
+                android:title="吐司" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/meat"
+        android:title="魚類肉類">
+        <menu>
+            <item android:id="@+id/beef"
+                android:title="牛肉" />
+            <item android:id="@+id/chicken"
+                android:title="雞肉" />
+            <item android:id="@+id/fish"
+                android:title="魚" />
+            <item android:id="@+id/mutton"
+                android:title="羊肉" />
+            <item android:id="@+id/pork"
+                android:title="豬肉" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/protein"
+        android:title="蛋豆">
+        <menu>
+            <item android:id="@+id/egg"
+                android:title="蛋" />
+            <item android:id="@+id/tofu"
+                android:title="豆腐" />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/vegetable"
+        android:title="蔬菜">
+
+        <menu>
+            <item android:id="@+id/sweet_pepper"
+                android:title="甜椒" />
+            <item android:id="@+id/broccoli"
+                android:title="花椰菜" />
+            <item android:id="@+id/cabbage"
+                android:title="高麗菜" />
+            <item android:id="@+id/carrot"
+                android:title="紅蘿蔔" />
+            <item android:id="@+id/lettuce"
+                android:title="萵苣" />
+            <item android:id="@+id/onion"
+                android:title="洋蔥" />
+            <item android:id="@+id/potato"
+                android:title="馬鈴薯" />
+
+        </menu>
+
+
+
+
+    </item>
+
+
+</menu>
