@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
-        android:text="輸入篩選資訊"
+        android:text="@string/text_filter_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
 
@@ -84,7 +84,7 @@
         android:id="@+id/text_filter_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
         android:text="@string/text_filter_date"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -96,8 +96,9 @@
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chip_group_date"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/text_filter_date"
@@ -149,7 +150,7 @@
         android:id="@+id/text_filter_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
         android:text="@string/text_filter_category"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -160,7 +161,7 @@
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chip_group_category"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@+id/text_filter_category"
         app:layout_constraintTop_toBottomOf="@+id/text_filter_category">
@@ -172,5 +173,16 @@
             android:layout_height="wrap_content"
             android:text="@string/category1" />
     </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="64dp"
+        android:text="確定篩選"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

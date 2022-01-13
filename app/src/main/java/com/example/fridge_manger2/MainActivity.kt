@@ -1,7 +1,10 @@
 package com.example.fridge_manger2
+import android.content.ContentValues
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         //connect to firebase
         val db = Firebase.firestore
+        val fridge_id = "oNwd8QEGyCSJz88Jzuef"
 
 
         //讓Onboarding只顯示一次
@@ -35,29 +39,24 @@ class MainActivity : AppCompatActivity() {
             editor.putBoolean("firsttime", false)
             editor.commit()
 
-            var intent: Intent = Intent(this, Onboarding::class.java)
+            var intent = Intent(this, Onboarding::class.java)
             startActivity(intent)
             finish()
         }
 
-        //Build bottom app bar
 
-        //declare filter dialog
-        val filterDialog = AlertDialog.Builder(this, R.style.AlertDialogTheme)
-            .setPositiveButton("確定") { _, _ ->
-                Toast.makeText(this, "篩選成功", Toast.LENGTH_SHORT).show()
-            }
-            .setNegativeButton("取消") { _, _ ->
-                Toast.makeText(this, "已取消篩選", Toast.LENGTH_SHORT).show()
-            }
-            .setView(R.layout.filter_dialog)
-            .create()
 
+
+
+
+//Build bottom app bar
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         bottomNavigationView?.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.filter -> {
-                    filterDialog.show()
+                    val intent = Intent(this, FilterActivity::class.java)
+                    startActivity(intent)
+//                    show_filter_dialog()
                 }
                 R.id.home -> {
                     val intent = Intent(this, MainActivity::class.java)

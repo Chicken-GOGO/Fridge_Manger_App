@@ -35,12 +35,12 @@
 
     <style name="Theme.Fridge_manger2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-<!--button style-->
+    <!--button style-->
     <style name="ShapeAppearance.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">8dp</item>
     </style>
-<!--dialog style -->
+    <!--dialog style -->
     <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
         <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
         <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
@@ -56,6 +56,11 @@
         <item name="android:textColor">@color/deep_orange_100_dark</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.Fridge_manger2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>
